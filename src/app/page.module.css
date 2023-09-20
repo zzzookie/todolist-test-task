@@ -1,0 +1,111 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  min-height: 100vh;
+}
+
+.list {
+  background-color: white;
+  width: 100%;
+  margin: 2rem 10rem;
+  max-width: 40rem;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+    rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.itemsLeft {
+  width: 5rem;
+}
+
+.listpoint {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px #ccc solid;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.listpointDescription {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.listpointDescription:hover label {
+  color: #f87652;
+  transition: color 0.3s ease;
+}
+
+.deleteButton {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.2rem;
+  color: #883333;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tabSelector {
+  display: flex;
+}
+
+.tabSelector li {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  color: #bbb;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+}
+
+.tabSelector li:hover {
+  color: rgb(255, 208, 195);
+  transition: color 0.3s ease;
+}
+
+.tabSelector .activeTab {
+  color: #333;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  outline: 1px #ffd0c3 solid;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  width: 100%;
+  font-weight: 300;
+  color: #333;
+
+  font-size: 0.8rem;
+  border-top: 1px #ccc solid;
+}
+
+.clearCompleted span {
+  transition: color 0.3s ease;
+}
+
+.clearCompleted:hover span {
+  color: var(--text-accent);
+  transition: color 0.3s ease;
+}
+
+.clearCompleted span:not(.visuallyHidden) {
+  cursor: pointer;
+}
